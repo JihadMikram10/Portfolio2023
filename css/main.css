@@ -1,0 +1,147 @@
+:root {
+  --main-color: #1c1e21;
+  --seconde-color: #313235;
+  --color-text: white;
+  --switchmode-background-color: #fcfcfc;
+}
+
+.light-theme {
+  --main-color: #ffffff;
+  --seconde-color: #e7e7e7;
+  --color-text: black;
+  --switchmode-background-color: rgb(0, 0, 0);
+}
+
+::-webkit-scrollbar{
+width:10px;
+
+}
+::-webkit-scrollbar-thumb{
+  background-color: rgb(133, 131, 131);
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover{
+  background-color: white;
+
+}
+body {
+
+  background-color: var(--main-color) !important;
+
+}
+
+.jumbotron{
+  width: 95%;
+    height: 200px;
+    color: var(--color-text);
+  background-color: var(--seconde-color);
+  border-radius: 1%;
+}
+.jumbotron span{
+  display: none;
+}
+#card_profile{
+  margin-top: -30px;
+  width: 10rem;
+ background-color: transparent;
+ box-shadow: none
+}
+#card_img_profile{
+    border-radius: 50%;
+     border: 5px solid var(--main-color);
+}
+#btn_hire_me{
+  width: 6rem;
+   background-color: #208663;
+   color: white;
+    height: fit-content;
+ 
+}
+
+#card_about , #card_contact{
+    background-color: var(--seconde-color);
+  color: var(--color-text);
+  border-radius: 0.5rem;
+  box-shadow: -1px 2px 1px -3px;
+}
+#card_contact a {
+   text-decoration: none;
+  color: var(--color-text);
+  padding: 5px;
+  height: fit-content;
+  font-size: 12px;
+}
+#card_skills{
+    background-color: var(--seconde-color);
+  color: var(--color-text);
+  border-radius: 0.5rem;
+  box-shadow: -1px 2px 1px -3px;
+  width: 90%;
+}
+#card_skills a{
+padding: 5px;
+  height: fit-content;
+  font-size: 12px;
+}
+#linkedin {
+  color: #0a66c2;
+}
+#gmail {
+  color: #c71610;
+}
+#whatsapp {
+  color: green;
+}
+#html5 {
+  color: #f06529;
+}
+#css3 {
+  color: #264de4;
+}
+#javascript {
+  color: #f0db4f;
+}
+#bootstrap {
+  color: #6c2bc3;
+}
+#angular {
+  color: #dd1b16;
+}
+#springboot {
+  color: #00ff9a;
+}
+#section_project {
+  width: 90%;
+}
+  
+#section_project .card {
+  background-color: var(--seconde-color);
+  color: var(--color-text);
+  transition: 1s;
+}
+#section_project .card:hover {
+  transform: scale(1.1);
+  z-index: 2;
+}
+#btn_open_project{
+  background-color: #208663;
+  color: white;
+  padding: 5px;
+  height: fit-content;
+  font-size: 12px;
+}
+
+@media only screen and (min-width: 200px) and (max-width: 519px) {
+  #card_about , #card_contact,#card_skills  {
+    width: 80% !important;
+    margin-left: 10px !important;
+    
+  }
+.jumbotron ,hr{
+  width: 85% !important;
+}
+#card_projet_1,#card_projet_2,#card_projet_3{
+  width: 60%;
+   margin-left: 15% !important;
+}
+}
